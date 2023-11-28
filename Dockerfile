@@ -17,6 +17,15 @@ RUN apt-get install x11-apps -y
 RUN apt-get install git -y
 RUN apt-get install dos2unix -y
 
+RUN apt install locales -y
+RUN locale-gen ja_JP.UTF-8
+ENV LANG ja_JP.UTF-8  
+ENV LANGUAGE ja_JP:ja  
+ENV LC_ALL ja_JP.UTF-8
+
+RUN apt install texlive-extra-utils -y
+RUN apt install chktex -y
+
 WORKDIR /work
 COPY run.sh /work/
 COPY compile.sh /work/

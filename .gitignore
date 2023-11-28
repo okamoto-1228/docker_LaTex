@@ -1,0 +1,7 @@
+# Ignore everything in the src directory
+src/*
+
+# But don't ignore the sample directory and readme.md
+!src/sample/
+!src/README.md
+!src/tex.code-workspace

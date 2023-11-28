@@ -14,7 +14,9 @@
 	
 	// Add the IDs of extensions you want installed when the container is created.
 	"extensions": [
-		"tecosaur.latex-utilities"
+		"tecosaur.latex-utilities",
+		"James-Yu.latex-workshop",
+		"mathematic.vscode-latex"
 	],
 
 	"workspaceFolder": "/root/src/",

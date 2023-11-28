@@ -1,0 +1,88 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"editor.formatOnSave": true,
+		"security.workspace.trust.untrustedFiles": "open",
+		"[latex]": {
+			"editor.tabSize": 2,
+			"editor.defaultFormatter": "mathematic.vscode-latex"
+		},
+		"latex-workshop.latex.tools": [
+			{
+				"name": "ptex2pdf (pLaTeX)",
+				"command": "ptex2pdf",
+				"args": [
+					"-l",
+					"-interaction=nonstopmode",
+					"-ot",
+					"-kanji=utf8",
+					"-synctex=1",
+					"-output-directory=%OUTDIR%",
+					"%DOC%"
+				]
+			}
+		],
+		"latex-workshop.latex.recipes": [
+			{
+				"name": "pLaTeX",
+				"tools": [
+					"ptex2pdf (pLaTeX)",
+					"ptex2pdf (pLaTeX)"
+				]
+			}
+		],
+		"latex-workshop.latex.magic.args": [
+			"-f",
+			"-gg",
+			"-pv",
+			"-synctex=1",
+			"-interaction=nonstopmode",
+			"-file-line-error",
+			"%DOC%"
+		],
+		"latex-workshop.latex.clean.fileTypes": [
+			"*.aux",
+			"*.bbl",
+			"*.blg",
+			"*.idx",
+			"*.ind",
+			"*.lof",
+			"*.lot",
+			"*.out",
+			"*.toc",
+			"*.acn",
+			"*.acr",
+			"*.alg",
+			"*.glg",
+			"*.glo",
+			"*.gls",
+			"*.ist",
+			"*.fls",
+			"*.log",
+			"*.fdb_latexmk",
+			"*.synctex.gz",
+			"_minted*",
+			"*.nav",
+			"*.snm",
+			"*.vrb",
+		],
+		"latex-workshop.view.pdf.viewer": "tab",
+		"latex-workshop.latex.autoClean.run": "onFailed",
+		"latex-workshop.synctex.afterBuild.enabled": true,
+		"latex-workshop.latexindent.args": [
+			"-c",
+			"%DIR%/",
+			"%TMPFILE%",
+			"-y=defaultIndent: ' '"
+		],
+		"latex-workshop.message.update.show": false,
+		"latex-workshop.message.latexlog.exclude": [
+			".*"
+		],
+		"latex-workshop.linting.chktex.enabled": false
+	}
+}
